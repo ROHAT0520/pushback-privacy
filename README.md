@@ -1,6 +1,6 @@
-# Overflow — Gizlilik Politikası
+ # Pushback — Gizlilik Politikası
 
-Bu depo tek bir iş yapar: **Overflow** (`com.rohat.overflow`) adlı Android
+Bu depo tek bir iş yapar: **Pushback** (`com.rohat.pushback`) adlı Android
 oyununun gizlilik politikasını Google Play'in istediği herkese açık bir adreste
 yayımlar.
 
