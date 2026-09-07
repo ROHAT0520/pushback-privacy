@@ -26,41 +26,69 @@
   hr{border:0;border-top:1px solid var(--rule);margin:3.5rem 0 2.5rem}
   footer{color:var(--muted);font-size:.85rem;margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
   code{background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:.1em .35em;font-size:.9em}
+  table{border-collapse:collapse;width:100%;margin:.75rem 0;font-size:.95em}
+  th,td{text-align:left;padding:.45rem .6rem;border-bottom:1px solid var(--rule);vertical-align:top}
+  th{color:var(--muted);font-weight:600}
 </style>
 </head>
 <body>
 <main>
 
 <h1>Pushback — Gizlilik Politikası</h1>
-<p class="meta">Son güncelleme: 30 Ağustos 2026 · Uygulama: Pushback (<code>com.rohat.pushback</code>) · Geliştirici: Millwright Studio</p>
+<p class="meta">Son güncelleme: 7 Eylül 2026 · Uygulama: Pushback (<code>com.rohat.pushback</code>) · Geliştirici: Millwright Studio</p>
 
-<p class="lede"><strong>Pushback hiçbir veri toplamıyor, saklamıyor veya paylaşmıyor.</strong><br>
-Uygulama internete hiç bağlanmıyor. Sunucumuz yok, hesap sistemi yok, reklam yok, uygulama içi satın alma yok, analitik yok.</p>
+<p class="lede"><strong>Oyunun kendisi hiçbir kişisel veri toplamıyor, saklamıyor veya paylaşmıyor.</strong><br>
+Sunucumuz yok, hesap sistemi yok, uygulama içi satın alma yok, analitik yok.<br>
+Oyun <strong>reklam gösteriyor</strong>: reklamları Google AdMob sağlıyor ve bu servis, reklam gösterebilmek için cihazınızdan bazı teknik verileri alıyor. Neyin alındığı ve nasıl sınırlayabileceğiniz aşağıda.</p>
+
+<h2>Reklamlar ve Google AdMob</h2>
+<p>Oyunda iki tür reklam var:</p>
+<ul>
+  <li><strong>Geçiş reklamı:</strong> ilk 10 seviyeden sonra, seviye aralarında, seyrek.</li>
+  <li><strong>Ödül reklamı:</strong> yalnızca siz isterseniz (mil ya da can kazanmak için "Reklam izle" düğmesine dokunduğunuzda).</li>
+</ul>
+<p>Reklamları <strong>Google AdMob</strong> (Google LLC) sunar. Google Mobile Ads SDK'sı reklam gösterirken şunları otomatik olarak toplar ve Google'a iletir:</p>
+<table>
+  <tr><th>Veri</th><th>Ne için</th></tr>
+  <tr><td>IP adresi (yaklaşık konum tahmini için)</td><td>Reklam seçimi, sahtecilik önleme</td></tr>
+  <tr><td>Android reklam kimliği ve uygulama seti kimliği</td><td>Reklam seçimi, ölçüm, sahtecilik önleme</td></tr>
+  <tr><td>Reklamla etkileşimler (görüntüleme, dokunma, video izleme)</td><td>Reklam ölçümü ve raporlama</td></tr>
+  <tr><td>Cihaz ve tanılama bilgisi (model, işletim sistemi, hata kayıtları)</td><td>Performans ve hata ayıklama</td></tr>
+</table>
+<p>Bu veriler <strong>bize değil Google'a</strong> gider; biz ham hâlini görmeyiz. Google'ın bu verileri nasıl kullandığı kendi politikasında anlatılıyor: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> ve <a href="https://policies.google.com/technologies/partner-sites">Google'ın ortak sitelerden/uygulamalardan aldığı bilgiler</a>.</p>
+<p><strong>Kişiselleştirilmiş reklamı kapatmak:</strong> Android'de <em>Ayarlar → Google → Reklamlar</em> (ya da <em>Gizlilik → Reklamlar</em>) altından reklam kimliğinizi sıfırlayabilir veya silebilirsiniz; silindiğinde reklamlar kişiselleştirilmez.</p>
+<p><strong>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre:</strong> oyun ilk açılışta Google'ın onay formunu (UMP) gösterir; reklam verisi ancak onayınızla işlenir. Kararınızı oyun içinde <em>Ayarlar → Gizlilik seçenekleri</em> düğmesinden her zaman değiştirebilirsiniz.</p>
 
 <h2>Cihazınızda saklanan veriler</h2>
-<p>Oyun yalnızca oyun ilerlemenizi ve ayarlarınızı <strong>cihazınızın kendi yerel depolamasında</strong> (Android <code>SharedPreferences</code>) tutar:</p>
+<p>Oyun, ilerlemenizi ve ayarlarınızı <strong>cihazınızın kendi yerel depolamasında</strong> (Android <code>SharedPreferences</code>) tutar:</p>
 <ul>
   <li>En yüksek skor ve oynanan oyun sayısı</li>
-  <li>Bulunduğunuz seviye ve ulaştığınız en uzak seviye</li>
-  <li>Seviye başına kazandığınız yıldızlar</li>
-  <li>Ses, müzik, titreşim ayarları</li>
-  <li>Hareket azaltma ayarı</li>
-  <li>Dil tercihi (TR/EN)</li>
-  <li>Eğitimin gösterilip gösterilmediği</li>
+  <li>Bulunduğunuz seviye, ulaştığınız en uzak seviye, seviye başına yıldızlar</li>
+  <li>Mil (oyun içi para), aletler, canlar ve ödül zinciri durumu</li>
+  <li>Bugün kaç ödül reklamı izlediğiniz (günlük sınır için) ve son geçiş reklamının zamanı</li>
+  <li>Ses, müzik, titreşim ve hareket azaltma ayarları</li>
+  <li>Dil tercihi ve eğitimin gösterilip gösterilmediği</li>
 </ul>
-<p>Bu verilerin tamamı cihazınızda kalır. Hiçbiri bize veya üçüncü bir tarafa gönderilmez. <strong>Uygulamayı sildiğinizde hepsi silinir.</strong></p>
+<p>Bunların hiçbiri bize veya üçüncü bir tarafa gönderilmez. <strong>Uygulamayı sildiğinizde hepsi silinir.</strong></p>
 
 <h2>İzinler</h2>
-<p>Uygulama hiçbir Android izni istemiyor. Kameraya, konuma, kişilere, depolamaya, mikrofona veya ağa erişmiyor.</p>
+<ul>
+  <li><code>INTERNET</code> — reklamların indirilmesi için. Oyunun kendisi çevrimdışı oynanır; internet yoksa reklam çıkmaz, oyun aynen devam eder.</li>
+  <li><code>com.google.android.gms.permission.AD_ID</code> — Android 13 ve üzeri cihazlarda reklam kimliğine erişim; Google Mobile Ads SDK'sı tarafından eklenir.</li>
+</ul>
+<p>Uygulama kameraya, konuma (GPS), kişilere, depolamaya veya mikrofona erişmez.</p>
 
 <h2>Çocuklar</h2>
-<p>Uygulama hiç veri toplamadığı için 13 yaş altı kullanıcılardan da veri toplamıyor. COPPA ve benzeri düzenlemeler açısından bu, uygulamanın kapsam dışı olduğu anlamına gelir.</p>
+<p>Pushback 13 yaş ve üzeri içindir ve çocuklara yönelik değildir. 13 yaş altından bilerek veri toplamıyoruz. Bir çocuğun verisinin işlendiğini düşünüyorsanız aşağıdaki adrese yazın; reklam kimliği cihaz ayarlarından her zaman sıfırlanabilir.</p>
 
 <h2>Üçüncü taraf servisler</h2>
-<p>Yok. Oyun Unity ile yapılmıştır; Unity Analytics, Unity Ads ve benzeri veri toplayan Unity servislerinin <strong>hiçbiri projede etkin değildir</strong>.</p>
+<p>Yalnızca <strong>Google AdMob</strong> (Google Mobile Ads SDK + User Messaging Platform). Unity Analytics, Unity Ads ve benzeri veri toplayan başka hiçbir servis projede etkin değildir.</p>
+
+<h2>Haklarınız</h2>
+<p>Biz kişisel veri tutmadığımız için silinecek bir kaydımız yok. Reklam verisi için Google'ın araçlarını kullanabilirsiniz (reklam kimliğini sıfırlama/silme, <a href="https://adssettings.google.com">Google reklam ayarları</a>). Sorularınız için aşağıdaki adrese yazabilirsiniz.</p>
 
 <h2>Değişiklikler</h2>
-<p>Bu politika değişirse yukarıdaki tarih güncellenir ve yeni sürüm bu adreste yayımlanır.</p>
+<p>Bu politika değişirse yukarıdaki tarih güncellenir ve yeni sürüm bu adreste yayımlanır. 7 Eylül 2026 sürümü: reklam (Google AdMob) eklendi; önceki sürüm (30 Ağustos 2026) reklamsız oyunu anlatıyordu.</p>
 
 <h2>İletişim</h2>
 <p><a href="mailto:millwrightstudio@gmail.com">millwrightstudio@gmail.com</a></p>
@@ -68,35 +96,60 @@ Uygulama internete hiç bağlanmıyor. Sunucumuz yok, hesap sistemi yok, reklam 
 <hr>
 
 <h1>Pushback — Privacy Policy</h1>
-<p class="meta">Last updated: 30 August 2026 · App: Pushback (<code>com.rohat.pushback</code>) · Developer: Millwright Studio</p>
+<p class="meta">Last updated: 7 September 2026 · App: Pushback (<code>com.rohat.pushback</code>) · Developer: Millwright Studio</p>
 
-<p class="lede"><strong>Pushback collects, stores and shares no data.</strong><br>
-The app never connects to the internet. There is no server, no account system, no advertising, no in-app purchase and no analytics.</p>
+<p class="lede"><strong>The game itself collects, stores and shares no personal data.</strong><br>
+There is no server, no account system, no in-app purchase and no analytics.<br>
+The game <strong>shows ads</strong>: they are served by Google AdMob, and that service receives some technical data from your device in order to show them. What is collected, and how to limit it, is described below.</p>
+
+<h2>Ads and Google AdMob</h2>
+<p>There are two kinds of ad:</p>
+<ul>
+  <li><strong>Interstitial:</strong> after the first 10 levels, between levels, infrequently.</li>
+  <li><strong>Rewarded:</strong> only when you ask for one (tapping "Watch ad" to earn miles or a life).</li>
+</ul>
+<p>Ads are served by <strong>Google AdMob</strong> (Google LLC). While showing them, the Google Mobile Ads SDK automatically collects and sends to Google:</p>
+<table>
+  <tr><th>Data</th><th>Purpose</th></tr>
+  <tr><td>IP address (to estimate approximate location)</td><td>Ad selection, fraud prevention</td></tr>
+  <tr><td>Android advertising ID and app set ID</td><td>Ad selection, measurement, fraud prevention</td></tr>
+  <tr><td>Interactions with ads (views, taps, video completions)</td><td>Ad measurement and reporting</td></tr>
+  <tr><td>Device and diagnostic information (model, OS, crash data)</td><td>Performance and debugging</td></tr>
+</table>
+<p>This data goes <strong>to Google, not to us</strong>; we never see it in raw form. How Google uses it is described in Google's own policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> and <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>.</p>
+<p><strong>Opting out of personalised ads:</strong> on Android, under <em>Settings → Google → Ads</em> (or <em>Privacy → Ads</em>) you can reset or delete your advertising ID; once deleted, ads are no longer personalised.</p>
+<p><strong>European Economic Area, United Kingdom and Switzerland:</strong> on first launch the game shows Google's consent form (UMP); ad data is processed only with your consent. You can change your choice at any time from <em>Settings → Privacy options</em> inside the game.</p>
 
 <h2>Data stored on your device</h2>
-<p>The game keeps only your progress and settings in your device's own local storage (Android <code>SharedPreferences</code>):</p>
+<p>The game keeps your progress and settings in your device's own local storage (Android <code>SharedPreferences</code>):</p>
 <ul>
   <li>High score and number of games played</li>
-  <li>Current level and the furthest level reached</li>
-  <li>Stars earned on each level</li>
-  <li>Sound, music and vibration settings</li>
-  <li>Reduce-motion setting</li>
-  <li>Language preference (TR/EN)</li>
-  <li>Whether the tutorial has been shown</li>
+  <li>Current level, furthest level reached, stars per level</li>
+  <li>Miles (in-game currency), tools, lives and reward-chain state</li>
+  <li>How many rewarded ads you watched today (for the daily cap) and when the last interstitial was shown</li>
+  <li>Sound, music, vibration and reduce-motion settings</li>
+  <li>Language preference and whether the tutorial has been shown</li>
 </ul>
-<p>All of it stays on your device. None of it is sent to us or to any third party. <strong>Uninstalling the app deletes all of it.</strong></p>
+<p>None of it is sent to us or to any third party. <strong>Uninstalling the app deletes all of it.</strong></p>
 
 <h2>Permissions</h2>
-<p>The app requests no Android permissions. It does not access the camera, location, contacts, storage, microphone or network.</p>
+<ul>
+  <li><code>INTERNET</code> — to download ads. The game itself plays offline; without a connection no ad appears and the game carries on unchanged.</li>
+  <li><code>com.google.android.gms.permission.AD_ID</code> — access to the advertising ID on Android 13 and later; added by the Google Mobile Ads SDK.</li>
+</ul>
+<p>The app does not access the camera, location (GPS), contacts, storage or microphone.</p>
 
 <h2>Children</h2>
-<p>Because the app collects no data at all, it collects none from users under 13 either. For COPPA and similar regulations this places the app outside scope.</p>
+<p>Pushback is for ages 13 and up and is not directed at children. We do not knowingly collect data from anyone under 13. If you believe a child's data has been processed, write to the address below; the advertising ID can always be reset from the device settings.</p>
 
 <h2>Third-party services</h2>
-<p>None. The game is made with Unity; no data-collecting Unity service (Unity Analytics, Unity Ads and the like) is enabled in the project.</p>
+<p>Only <strong>Google AdMob</strong> (Google Mobile Ads SDK + User Messaging Platform). No other data-collecting service (Unity Analytics, Unity Ads and the like) is enabled in the project.</p>
+
+<h2>Your rights</h2>
+<p>Since we keep no personal data, there is no record of ours to delete. For ad data, use Google's tools (reset/delete the advertising ID, <a href="https://adssettings.google.com">Google ad settings</a>). Questions go to the address below.</p>
 
 <h2>Changes</h2>
-<p>If this policy changes, the date above is updated and the new version is published at this address.</p>
+<p>If this policy changes, the date above is updated and the new version is published at this address. The 7 September 2026 version adds advertising (Google AdMob); the previous version (30 August 2026) described the ad-free game.</p>
 
 <h2>Contact</h2>
 <p><a href="mailto:millwrightstudio@gmail.com">millwrightstudio@gmail.com</a></p>
